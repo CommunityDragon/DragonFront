@@ -10,12 +10,12 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'home',
+      name: 'Home',
       component: Home,
     },
     {
       path: '/docs',
-      name: 'docs',
+      name: 'Docs',
       component: () => import(/* webpackChunkName: "docs" */ './views/Docs.vue'),
     },
   ],
