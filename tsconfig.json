@@ -1,15 +1,15 @@
 {
   "compilerOptions": {
-    "target": "esnext",
-    "module": "esnext",
-    "strict": true,
-    "jsx": "preserve",
-    "importHelpers": true,
+    "allowSyntheticDefaultImports": true,
     "moduleResolution": "node",
     "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
+    "noImplicitAny": false,
+    "importHelpers": true,
     "sourceMap": true,
+    "target": "esnext",
+    "module": "esnext",
     "baseUrl": ".",
+    "strict": true,
     "types": [
       "webpack-env",
       "mocha",
@@ -25,7 +25,8 @@
       "dom",
       "dom.iterable",
       "scripthost"
-    ]
+    ],
+    "jsx": "preserve"
   },
   "include": [
     "src/**/*.ts",

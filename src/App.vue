@@ -1,9 +1,33 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
+    <sui-sidebar-pushable>
+      <side-bar/>
+      <sui-sidebar-pusher :dimmed="showSidebar">
+        <nav-bar/>
+        <router-view/>
+      </sui-sidebar-pusher>
+    </sui-sidebar-pushable>
   </div>
 </template>
+
+<script>
+import { NavBar, SideBar } from './components/common';
+
+export default {
+  components: {
+    NavBar,
+    SideBar,
+  },
+  computed: {
+    showSidebar() {
+      return this.$store.state.showSidebar;
+    },
+  },
+};
+</script>
+
+<style>
+#app {
+  height: 100%;
+}
+</style>
