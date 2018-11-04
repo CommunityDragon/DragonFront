@@ -19,7 +19,7 @@
           </sui-grid-column>
         <sui-grid-column :width="12">
           <sui-item-group>
-            <sui-item v-for="(endpoint, i) in endpoints" :key="i">
+            <sui-item v-for="endpoint in endpoints" :key="endpoint.route">
               <endpoint-card :endpoint="endpoint"/>
             </sui-item>
           </sui-item-group>
