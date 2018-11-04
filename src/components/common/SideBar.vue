@@ -24,7 +24,7 @@ export default {
         {
           name: 'Home',
           route: '/',
-        }, 
+        },
         {
           name: 'Docs',
           route: '/docs',
@@ -42,7 +42,7 @@ export default {
       this.$store.dispatch('toggleSidebar');
     },
   },
-}
+};
 </script>
 
 <style>

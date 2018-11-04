@@ -30,7 +30,7 @@ export default {
         {
           name: 'Home',
           route: '/',
-        }, 
+        },
         {
           name: 'Docs',
           route: '/docs',
@@ -45,15 +45,15 @@ export default {
     toggleSidebar() {
       this.$nextTick(() => {
         this.$store.dispatch('toggleSidebar');
-      })
+      });
     },
   },
   watch: {
-    '$route.name': function() {
+    '$route.name'() {
       this.$store.commit('changeRoute', this.$route.name);
-    }
+    },
   },
-}
+};
 </script>
 
 <style lang="scss" scoped>
