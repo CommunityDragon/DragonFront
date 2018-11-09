@@ -32,6 +32,11 @@ export default {
       ],
     };
   },
+  watch: {
+    showSidebar() {
+      this.$store.commit('toggleModal', this.showSidebar);
+    }
+  },
   computed: {
     showSidebar() {
       return this.$store.state.showSidebar;
