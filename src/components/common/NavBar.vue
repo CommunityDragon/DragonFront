@@ -14,6 +14,27 @@
       <sui-menu-menu>
         <a
           is="sui-menu-item"
+          href="https://cdn.communitydragon.org"
+          target="_blank"
+        >CDN</a>
+      </sui-menu-menu>
+      <sui-menu-menu>
+        <a
+          is="sui-menu-item"
+          href="https://raw.communitydragon.org"
+          target="_blank"
+        >RAW</a>
+      </sui-menu-menu>
+      <sui-menu-menu>
+        <a
+          is="sui-menu-item"
+          href="https://discord.gg/rGpp8s3"
+          target="_blank"
+        >Discord</a>
+      </sui-menu-menu>
+      <sui-menu-menu>
+        <a
+          is="sui-menu-item"
           href="https://www.patreon.com/communitydragon"
           target="_blank"
         >Patreon</a>
