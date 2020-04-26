@@ -10,8 +10,8 @@
 export default {
   data() {
     return {
-      value: ''
-    }
+      value: '',
+    };
   },
   props: ['object', 'innitial', 'placeholder'],
   watch: {
@@ -22,15 +22,15 @@ export default {
       handler() {
         this.value = this.innitial;
       },
-      immediate: true
-    }
+      immediate: true,
+    },
   },
   methods: {
     emitChange() {
       this.$emit('change', this.value, this.object);
-    }
+    },
   },
-}
+};
 </script>
 
 <style>

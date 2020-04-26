@@ -35,7 +35,7 @@ export default {
   watch: {
     showSidebar() {
       this.$store.commit('toggleModal', this.showSidebar);
-    }
+    },
   },
   computed: {
     showSidebar() {

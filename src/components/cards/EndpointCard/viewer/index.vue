@@ -46,7 +46,7 @@
 </template>
 
 <script>
-import VueJsonPretty from 'vue-json-pretty'
+import VueJsonPretty from 'vue-json-pretty';
 import UrlInput from './urlinput';
 import UrlNav from '../urlnav';
 import Axios from 'axios';
@@ -62,13 +62,13 @@ export default {
       parameters: [],
       values: {},
       toggled: false,
-    }
+    };
   },
   props: ['value', 'endpoint'],
   components: {
     VueJsonPretty,
     UrlInput,
-    UrlNav
+    UrlNav,
   },
   watch: {
     baseURL() {
@@ -100,7 +100,7 @@ export default {
         const req = await Axios.get(url);
         this.loadError = false;
         this.contentType = req.headers['content-type'];
-        if (this.contentType.startsWith('application/json')) this.data = req.data
+        if (this.contentType.startsWith('application/json')) this.data = req.data;
         this.endURL = url;
       } catch (e) {
         this.loadError = true;
@@ -112,16 +112,16 @@ export default {
       this.values[key] = value;
     },
     close() {
-      this.$emit('input', false)
+      this.$emit('input', false);
     },
     capitalize(value) {
       return value.charAt(0).toUpperCase() + value.slice(1);
     },
     paramValue(param) {
-      return this.values[param]
-    }
-  }
-}
+      return this.values[param];
+    },
+  },
+};
 </script>
 
 <style lang="scss" scoped>

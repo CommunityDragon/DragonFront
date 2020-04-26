@@ -24,8 +24,8 @@ export default {
   props: ['endpoint'],
   computed: {
     endpointSelected() {
-      return `Endpoint ${this.endpoint.routes.length !== 1  
-        ? `(${this.endpointPosition + 1} out of ${this.endpoint.routes.length})` 
+      return `Endpoint ${this.endpoint.routes.length !== 1
+        ? `(${this.endpointPosition + 1} out of ${this.endpoint.routes.length})`
         : ''}`;
     },
   },
@@ -35,7 +35,7 @@ export default {
         this.$emit('input', this.endpoint.routes[this.endpointPosition]);
       },
       immediate: true,
-    }
+    },
   },
   methods: {
     inc() {

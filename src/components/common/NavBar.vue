@@ -11,12 +11,12 @@
           :active="isActive(item.name)"
         />
       </sui-menu-menu>
-      <sui-menu-menu position="right">
+      <sui-menu-menu>
         <a
           is="sui-menu-item"
-          icon="bars"
-          @click="toggleSidebar"
-        />
+          href="https://www.patreon.com/communitydragon"
+          target="_blank"
+        >Patreon</a>
       </sui-menu-menu>
     </sui-menu>
   </div>

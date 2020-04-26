@@ -6,6 +6,8 @@
       text-align="center">
       <img class="cdragon-logo" alt="CommunityDragon logo" src="../assets/logo.png">
       <h1>A community made to manage a custom<br>API that serves static data</h1>
+      <br>
+      <h4>CommunityDragon was created under Riot Games' "Legal Jibber Jabber" policy using assets owned by Riot Games.<br>Riot Games does not endorse or sponsor this project.</h4>
     </sui-header>
   </sui-container>
 </template>
@@ -18,6 +20,10 @@
 .cdragon-logo {
   width: 10em !important; 
   height: auto !important;
+}
+
+h4 {
+  color: #c7c5d2;
 }
 
 @media (min-width: 768px) { 
